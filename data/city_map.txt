@@ -1,0 +1,32 @@
+# Format: <num_nodes> <num_edges>
+# <node_id> <name> <x> <y>
+# <from_id> <to_id> <weight>
+
+10 15
+
+1 Warehouse_A 10 20
+2 Downtown 25 30
+3 Hospital 40 35
+4 Mall 55 20
+5 University 70 40
+6 Airport 90 50
+7 Industrial_Zone 20 70
+8 Train_Station 45 75
+9 Residential_Area 65 85
+10 Port 95 90
+
+1 2 18
+1 7 25
+2 3 12
+2 4 20
+3 5 15
+4 5 10
+5 6 22
+7 8 14
+8 9 16
+9 10 18
+3 8 30
+4 8 28
+6 10 20
+2 7 19
+5 9 17

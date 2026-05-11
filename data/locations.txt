@@ -1,0 +1,12 @@
+# Format: <id> <name> <x> <y> <type>
+
+1 Warehouse_A 10 20 Warehouse
+2 Downtown 25 30 Commercial
+3 Hospital 40 35 Medical
+4 Mall 55 20 Shopping
+5 University 70 40 Education
+6 Airport 90 50 Transport
+7 Industrial_Zone 20 70 Industrial
+8 Train_Station 45 75 Transport
+9 Residential_Area 65 85 Residential
+10 Port 95 90 Logistics

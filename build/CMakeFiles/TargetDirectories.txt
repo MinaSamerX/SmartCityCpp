@@ -1,0 +1,10 @@
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/SmartCityCore.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/SmartCityApp.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test_graph.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test_hashtable.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test_integration.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test_priorityqueue.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test_quadtree.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/test.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/edit_cache.dir
+C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/build/CMakeFiles/rebuild_cache.dir
