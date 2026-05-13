@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem"
+CMAKE_SOURCE_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build"
+CMAKE_BINARY_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -102,14 +102,14 @@ clean: CMakeFiles/test_quadtree.dir/clean
 CMakeFiles/SmartCityCore.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityCore.dir\build.make CMakeFiles/SmartCityCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityCore.dir\build.make CMakeFiles/SmartCityCore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target SmartCityCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target SmartCityCore"
 .PHONY : CMakeFiles/SmartCityCore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SmartCityCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SmartCityCore.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/SmartCityCore.dir/rule
 
 # Convenience name for target.
@@ -119,7 +119,7 @@ SmartCityCore: CMakeFiles/SmartCityCore.dir/rule
 # codegen rule for target.
 CMakeFiles/SmartCityCore.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityCore.dir\build.make CMakeFiles/SmartCityCore.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Finished codegen for target SmartCityCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Finished codegen for target SmartCityCore"
 .PHONY : CMakeFiles/SmartCityCore.dir/codegen
 
 # clean rule for target.
@@ -134,14 +134,14 @@ CMakeFiles/SmartCityCore.dir/clean:
 CMakeFiles/SmartCityApp.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityApp.dir\build.make CMakeFiles/SmartCityApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityApp.dir\build.make CMakeFiles/SmartCityApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=1,2 "Built target SmartCityApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=1,2 "Built target SmartCityApp"
 .PHONY : CMakeFiles/SmartCityApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SmartCityApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SmartCityApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/SmartCityApp.dir/rule
 
 # Convenience name for target.
@@ -151,7 +151,7 @@ SmartCityApp: CMakeFiles/SmartCityApp.dir/rule
 # codegen rule for target.
 CMakeFiles/SmartCityApp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SmartCityApp.dir\build.make CMakeFiles/SmartCityApp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=1,2 "Finished codegen for target SmartCityApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=1,2 "Finished codegen for target SmartCityApp"
 .PHONY : CMakeFiles/SmartCityApp.dir/codegen
 
 # clean rule for target.
@@ -166,14 +166,14 @@ CMakeFiles/SmartCityApp.dir/clean:
 CMakeFiles/test_graph.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_graph.dir\build.make CMakeFiles/test_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_graph.dir\build.make CMakeFiles/test_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=16,17 "Built target test_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=16,17 "Built target test_graph"
 .PHONY : CMakeFiles/test_graph.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_graph.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_graph.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ test_graph: CMakeFiles/test_graph.dir/rule
 # codegen rule for target.
 CMakeFiles/test_graph.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_graph.dir\build.make CMakeFiles/test_graph.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=16,17 "Finished codegen for target test_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=16,17 "Finished codegen for target test_graph"
 .PHONY : CMakeFiles/test_graph.dir/codegen
 
 # clean rule for target.
@@ -198,14 +198,14 @@ CMakeFiles/test_graph.dir/clean:
 CMakeFiles/test_hashtable.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hashtable.dir\build.make CMakeFiles/test_hashtable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hashtable.dir\build.make CMakeFiles/test_hashtable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=18,19 "Built target test_hashtable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=18,19 "Built target test_hashtable"
 .PHONY : CMakeFiles/test_hashtable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_hashtable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_hashtable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_hashtable.dir/rule
 
 # Convenience name for target.
@@ -215,7 +215,7 @@ test_hashtable: CMakeFiles/test_hashtable.dir/rule
 # codegen rule for target.
 CMakeFiles/test_hashtable.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_hashtable.dir\build.make CMakeFiles/test_hashtable.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=18,19 "Finished codegen for target test_hashtable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=18,19 "Finished codegen for target test_hashtable"
 .PHONY : CMakeFiles/test_hashtable.dir/codegen
 
 # clean rule for target.
@@ -230,14 +230,14 @@ CMakeFiles/test_hashtable.dir/clean:
 CMakeFiles/test_integration.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_integration.dir\build.make CMakeFiles/test_integration.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_integration.dir\build.make CMakeFiles/test_integration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=20,21 "Built target test_integration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=20,21 "Built target test_integration"
 .PHONY : CMakeFiles/test_integration.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_integration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_integration.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_integration.dir/rule
 
 # Convenience name for target.
@@ -247,7 +247,7 @@ test_integration: CMakeFiles/test_integration.dir/rule
 # codegen rule for target.
 CMakeFiles/test_integration.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_integration.dir\build.make CMakeFiles/test_integration.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=20,21 "Finished codegen for target test_integration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=20,21 "Finished codegen for target test_integration"
 .PHONY : CMakeFiles/test_integration.dir/codegen
 
 # clean rule for target.
@@ -262,14 +262,14 @@ CMakeFiles/test_integration.dir/clean:
 CMakeFiles/test_priorityqueue.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_priorityqueue.dir\build.make CMakeFiles/test_priorityqueue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_priorityqueue.dir\build.make CMakeFiles/test_priorityqueue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=22,23 "Built target test_priorityqueue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=22,23 "Built target test_priorityqueue"
 .PHONY : CMakeFiles/test_priorityqueue.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_priorityqueue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_priorityqueue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_priorityqueue.dir/rule
 
 # Convenience name for target.
@@ -279,7 +279,7 @@ test_priorityqueue: CMakeFiles/test_priorityqueue.dir/rule
 # codegen rule for target.
 CMakeFiles/test_priorityqueue.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_priorityqueue.dir\build.make CMakeFiles/test_priorityqueue.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=22,23 "Finished codegen for target test_priorityqueue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=22,23 "Finished codegen for target test_priorityqueue"
 .PHONY : CMakeFiles/test_priorityqueue.dir/codegen
 
 # clean rule for target.
@@ -294,14 +294,14 @@ CMakeFiles/test_priorityqueue.dir/clean:
 CMakeFiles/test_quadtree.dir/all: CMakeFiles/SmartCityCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_quadtree.dir\build.make CMakeFiles/test_quadtree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_quadtree.dir\build.make CMakeFiles/test_quadtree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=24,25 "Built target test_quadtree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=24,25 "Built target test_quadtree"
 .PHONY : CMakeFiles/test_quadtree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_quadtree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/test_quadtree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles 0
 .PHONY : CMakeFiles/test_quadtree.dir/rule
 
 # Convenience name for target.
@@ -311,7 +311,7 @@ test_quadtree: CMakeFiles/test_quadtree.dir/rule
 # codegen rule for target.
 CMakeFiles/test_quadtree.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_quadtree.dir\build.make CMakeFiles/test_quadtree.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=24,25 "Finished codegen for target test_quadtree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=24,25 "Finished codegen for target test_quadtree"
 .PHONY : CMakeFiles/test_quadtree.dir/codegen
 
 # clean rule for target.

@@ -1,8 +1,10 @@
 #pragma once
+#include <limits>
 // src/spatial/SegmentTree.h
 // Smart City Delivery & Traffic Management System
 
 #include <vector>
+#include <limits>
 #include <functional>
 #include <stdexcept>
 #include <ostream>

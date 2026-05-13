@@ -7,6 +7,9 @@
 #include <functional>
 #include <stdexcept>
 #include <ostream>
+#include <memory>
+#include <algorithm>
+#include "../core/Package.h"
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Class: PriorityQueue<T, Comparator>
@@ -174,7 +177,6 @@ private:
 // ─────────────────────────────────────────────────────────────────────────────
 //  Convenience aliases used throughout the system
 // ─────────────────────────────────────────────────────────────────────────────
-#include "../core/Package.h"
 
 // Max-heap: higher priorityScore() = served first
 using DeliveryQueue = PriorityQueue<

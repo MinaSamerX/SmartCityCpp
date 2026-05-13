@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <fstream>
+#include <vector>
 #include "system/SmartCitySystem.h"
 #include "system/CityMapManager.h"
 
@@ -71,9 +73,10 @@ static void demoRushHour(SmartCitySystem& sys) {
     std::cout << "\n";
 
     // Simulate congestion on main arteries
-    sys.handleTrafficUpdate(1, 2, 25.0, "Rush hour: Warehouse→Downtown");
-    sys.handleTrafficUpdate(2, 3, 18.0, "Rush hour: Downtown→Hospital");
-    sys.handleTrafficUpdate(5, 6, 35.0, "Rush hour: University→Airport");
+    // Apply heavy congestion on top of current weights
+    sys.handleTrafficUpdate(1, 2, 50.0, "Rush hour: Warehouse→Downtown blocked");
+    sys.handleTrafficUpdate(2, 3, 45.0, "Rush hour: Downtown→Hospital congested");
+    sys.handleTrafficUpdate(5, 6, 80.0, "Rush hour: University→Airport gridlock");
 
     auto after = mgr.shortestPath(1, 6);
     std::cout << "  Path 1(Warehouse)→6(Airport) AFTER  rush:\n";
@@ -182,7 +185,24 @@ static void demoDispatch(SmartCitySystem& sys) {
 int main(int argc, char* argv[]) {
     banner("Smart City Delivery & Traffic Management System");
 
-    std::string dataDir = (argc > 1) ? argv[1] : "data";
+    // ── Resolve data directory ────────────────────────────────────────────────
+    // Try: (1) command-line arg, (2) ./data, (3) ../../data (when run from build/bin)
+    std::string dataDir = "data";
+    if (argc > 1) {
+        dataDir = argv[1];
+    } else {
+        // Auto-detect: walk up from exe location to find data/
+        std::vector<std::string> candidates = {
+            "data",
+            "../data",
+            "../../data",
+            "../../../data"
+        };
+        for (auto& c : candidates) {
+            std::ifstream test(c + "/city_map.txt");
+            if (test.good()) { dataDir = c; break; }
+        }
+    }
     std::cout << "Data directory : " << dataDir << "\n";
     std::cout << "Data files     : city_map.txt, locations.txt, vehicles.txt,\n"
               << "                 deliveries.txt, traffic_updates.txt\n";
@@ -191,6 +211,8 @@ int main(int argc, char* argv[]) {
     SmartCitySystem sys;
     if (!sys.loadFromDirectory(dataDir)) {
         std::cerr << "[FATAL] Could not load data from: " << dataDir << "\n";
+        std::cerr << "        Run from project root or pass data path as argument:\n";
+        std::cerr << "        SmartCityApp.exe ../../data\n";
         return 1;
     }
 
@@ -198,10 +220,10 @@ int main(int argc, char* argv[]) {
 
     // ── Run all 5 scenarios ───────────────────────────────────────────────────
     demoSpatial(sys);
+    demoDispatch(sys);      // dispatch loaded packages BEFORE manual demos
     demoNewDelivery(sys);
     demoRushHour(sys);
     demoIncidents(sys);
-    demoDispatch(sys);
 
     banner("System Shutdown — All Done");
     return 0;

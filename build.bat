@@ -54,7 +54,7 @@ if %ERRORLEVEL% neq 0 (
     pause
     exit /b
 )
-cd ...\
+cd ..
 echo.
 echo ==========================================
 echo Build completed successfully!
@@ -63,6 +63,7 @@ echo.
 
 echo Executables location:
 echo build\bin\
+echo or run all from run.bat
 echo.
 
 pause

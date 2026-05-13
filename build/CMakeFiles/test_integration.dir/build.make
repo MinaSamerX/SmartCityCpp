@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem"
+CMAKE_SOURCE_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build"
+CMAKE_BINARY_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_integration.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test_integration.dir/codegen:
 
 CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj: CMakeFiles/test_integration.dir/flags.make
 CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj: CMakeFiles/test_integration.dir/includes_CXX.rsp
-CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/tests/test_integration.cpp
+CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/tests/test_integration.cpp
 CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj: CMakeFiles/test_integration.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj -MF CMakeFiles\test_integration.dir\tests\test_integration.cpp.obj.d -o CMakeFiles\test_integration.dir\tests\test_integration.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\tests\test_integration.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_integration.dir/tests/test_integration.cpp.obj -MF CMakeFiles\test_integration.dir\tests\test_integration.cpp.obj.d -o CMakeFiles\test_integration.dir\tests\test_integration.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\tests\test_integration.cpp
 
 CMakeFiles/test_integration.dir/tests/test_integration.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_integration.dir/tests/test_integration.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\tests\test_integration.cpp" > CMakeFiles\test_integration.dir\tests\test_integration.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\tests\test_integration.cpp > CMakeFiles\test_integration.dir\tests\test_integration.cpp.i
 
 CMakeFiles/test_integration.dir/tests/test_integration.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_integration.dir/tests/test_integration.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\tests\test_integration.cpp" -o CMakeFiles\test_integration.dir\tests\test_integration.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\tests\test_integration.cpp -o CMakeFiles\test_integration.dir\tests\test_integration.cpp.s
 
 # Object files for target test_integration
 test_integration_OBJECTS = \
@@ -99,7 +99,7 @@ bin/test_integration.exe: libSmartCityCore.a
 bin/test_integration.exe: CMakeFiles/test_integration.dir/linkLibs.rsp
 bin/test_integration.exe: CMakeFiles/test_integration.dir/objects1.rsp
 bin/test_integration.exe: CMakeFiles/test_integration.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin\test_integration.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin\test_integration.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test_integration.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +111,6 @@ CMakeFiles/test_integration.dir/clean:
 .PHONY : CMakeFiles/test_integration.dir/clean
 
 CMakeFiles/test_integration.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles\test_integration.dir\DependInfo.cmake" "--color=$(COLOR)" test_integration
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles\test_integration.dir\DependInfo.cmake "--color=$(COLOR)" test_integration
 .PHONY : CMakeFiles/test_integration.dir/depend
 

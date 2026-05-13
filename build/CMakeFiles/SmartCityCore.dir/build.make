@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem"
+CMAKE_SOURCE_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build"
+CMAKE_BINARY_DIR = C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SmartCityCore.dir/depend.make
@@ -73,183 +73,183 @@ CMakeFiles/SmartCityCore.dir/codegen:
 
 CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/graph/RoadNetwork.cpp
+CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/graph/RoadNetwork.cpp
 CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\graph\RoadNetwork.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\graph\RoadNetwork.cpp
 
 CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\graph\RoadNetwork.cpp" > CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\graph\RoadNetwork.cpp > CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/graph/RoadNetwork.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\graph\RoadNetwork.cpp" -o CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\graph\RoadNetwork.cpp -o CMakeFiles\SmartCityCore.dir\src\graph\RoadNetwork.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/io/FileParser.cpp
+CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/io/FileParser.cpp
 CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\FileParser.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\FileParser.cpp
 
 CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\FileParser.cpp" > CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\FileParser.cpp > CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/io/FileParser.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\FileParser.cpp" -o CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\FileParser.cpp -o CMakeFiles\SmartCityCore.dir\src\io\FileParser.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/io/Reporter.cpp
+CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/io/Reporter.cpp
 CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\Reporter.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\Reporter.cpp
 
 CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\Reporter.cpp" > CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\Reporter.cpp > CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/io/Reporter.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\io\Reporter.cpp" -o CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\io\Reporter.cpp -o CMakeFiles\SmartCityCore.dir\src\io\Reporter.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/main.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/main.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/main.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/main.cpp
+CMakeFiles/SmartCityCore.dir/src/main.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/main.cpp
 CMakeFiles/SmartCityCore.dir/src/main.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SmartCityCore.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/main.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\main.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\main.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SmartCityCore.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/main.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\main.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\main.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\main.cpp
 
 CMakeFiles/SmartCityCore.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\main.cpp" > CMakeFiles\SmartCityCore.dir\src\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\main.cpp > CMakeFiles\SmartCityCore.dir\src\main.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\main.cpp" -o CMakeFiles\SmartCityCore.dir\src\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\main.cpp -o CMakeFiles\SmartCityCore.dir\src\main.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/optimizer/RouteOptimizer.cpp
+CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/optimizer/RouteOptimizer.cpp
 CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\optimizer\RouteOptimizer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\optimizer\RouteOptimizer.cpp
 
 CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\optimizer\RouteOptimizer.cpp" > CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\optimizer\RouteOptimizer.cpp > CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/optimizer/RouteOptimizer.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\optimizer\RouteOptimizer.cpp" -o CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\optimizer\RouteOptimizer.cpp -o CMakeFiles\SmartCityCore.dir\src\optimizer\RouteOptimizer.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/scheduler/DeliveryScheduler.cpp
+CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/scheduler/DeliveryScheduler.cpp
 CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\scheduler\DeliveryScheduler.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\scheduler\DeliveryScheduler.cpp
 
 CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\scheduler\DeliveryScheduler.cpp" > CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\scheduler\DeliveryScheduler.cpp > CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/scheduler/DeliveryScheduler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\scheduler\DeliveryScheduler.cpp" -o CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\scheduler\DeliveryScheduler.cpp -o CMakeFiles\SmartCityCore.dir\src\scheduler\DeliveryScheduler.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/spatial/QuadTree.cpp
+CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/spatial/QuadTree.cpp
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\spatial\QuadTree.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\spatial\QuadTree.cpp
 
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\spatial\QuadTree.cpp" > CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\spatial\QuadTree.cpp > CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\spatial\QuadTree.cpp" -o CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\spatial\QuadTree.cpp -o CMakeFiles\SmartCityCore.dir\src\spatial\QuadTree.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/system/CityMapManager.cpp
+CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/system/CityMapManager.cpp
 CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\CityMapManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\CityMapManager.cpp
 
 CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\CityMapManager.cpp" > CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\CityMapManager.cpp > CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/system/CityMapManager.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\CityMapManager.cpp" -o CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\CityMapManager.cpp -o CMakeFiles\SmartCityCore.dir\src\system\CityMapManager.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/system/EntityManager.cpp
+CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/system/EntityManager.cpp
 CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\EntityManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\EntityManager.cpp
 
 CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\EntityManager.cpp" > CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\EntityManager.cpp > CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/system/EntityManager.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\EntityManager.cpp" -o CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\EntityManager.cpp -o CMakeFiles\SmartCityCore.dir\src\system\EntityManager.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/system/SmartCitySystem.cpp
+CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/system/SmartCitySystem.cpp
 CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SmartCitySystem.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SmartCitySystem.cpp
 
 CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SmartCitySystem.cpp" > CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SmartCitySystem.cpp > CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/system/SmartCitySystem.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SmartCitySystem.cpp" -o CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SmartCitySystem.cpp -o CMakeFiles\SmartCityCore.dir\src\system\SmartCitySystem.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/system/SpatialQueryEngine.cpp
+CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/system/SpatialQueryEngine.cpp
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SpatialQueryEngine.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SpatialQueryEngine.cpp
 
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SpatialQueryEngine.cpp" > CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SpatialQueryEngine.cpp > CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\SpatialQueryEngine.cpp" -o CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SpatialQueryEngine.cpp -o CMakeFiles\SmartCityCore.dir\src\system\SpatialQueryEngine.cpp.s
 
 CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj: CMakeFiles/SmartCityCore.dir/flags.make
 CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj: CMakeFiles/SmartCityCore.dir/includes_CXX.rsp
-CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/system/TrafficMonitor.cpp
+CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj: C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/system/TrafficMonitor.cpp
 CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj: CMakeFiles/SmartCityCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.obj -c "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\TrafficMonitor.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj -MF CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.obj.d -o CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.obj -c C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\TrafficMonitor.cpp
 
 CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\TrafficMonitor.cpp" > CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\TrafficMonitor.cpp > CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.i
 
 CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\src\system\TrafficMonitor.cpp" -o CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\TrafficMonitor.cpp -o CMakeFiles\SmartCityCore.dir\src\system\TrafficMonitor.cpp.s
 
 # Object files for target SmartCityCore
 SmartCityCore_OBJECTS = \
@@ -283,7 +283,7 @@ libSmartCityCore.a: CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.c
 libSmartCityCore.a: CMakeFiles/SmartCityCore.dir/src/system/TrafficMonitor.cpp.obj
 libSmartCityCore.a: CMakeFiles/SmartCityCore.dir/build.make
 libSmartCityCore.a: CMakeFiles/SmartCityCore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libSmartCityCore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libSmartCityCore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\SmartCityCore.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SmartCityCore.dir\link.txt --verbose=$(VERBOSE)
 
@@ -296,6 +296,6 @@ CMakeFiles/SmartCityCore.dir/clean:
 .PHONY : CMakeFiles/SmartCityCore.dir/clean
 
 CMakeFiles/SmartCityCore.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build" "C:\Users\Mina\Desktop\ADV_SWD\projects\Final Project\SmartCitySystem\build\CMakeFiles\SmartCityCore.dir\DependInfo.cmake" "--color=$(COLOR)" SmartCityCore
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\build\CMakeFiles\SmartCityCore.dir\DependInfo.cmake "--color=$(COLOR)" SmartCityCore
 .PHONY : CMakeFiles/SmartCityCore.dir/depend
 

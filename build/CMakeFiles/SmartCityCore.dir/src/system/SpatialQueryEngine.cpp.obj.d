@@ -1,6 +1,6 @@
 CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: \
- C:\Users\Mina\Desktop\ADV_SWD\projects\Final\ Project\SmartCitySystem\src\system\SpatialQueryEngine.cpp \
- C:\Users\Mina\Desktop\ADV_SWD\projects\Final\ Project\SmartCitySystem\src\system\SpatialQueryEngine.h \
+ C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SpatialQueryEngine.cpp \
+ C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\system\SpatialQueryEngine.h \
  C:/MinGW/include/c++/13.1.0/memory \
  C:/MinGW/include/c++/13.1.0/bits/memoryfwd.h \
  C:/MinGW/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -163,7 +163,7 @@ CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: \
  C:/MinGW/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/MinGW/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/MinGW/include/c++/13.1.0/bits/ostream.tcc \
- C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/core/Location.h \
+ C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/core/Location.h \
  C:/MinGW/include/c++/13.1.0/cmath \
  C:/MinGW/x86_64-w64-mingw32/include/math.h \
  C:/MinGW/include/c++/13.1.0/bits/specfun.h \
@@ -180,10 +180,10 @@ CMakeFiles/SmartCityCore.dir/src/system/SpatialQueryEngine.cpp.obj: \
  C:/MinGW/include/c++/13.1.0/tr1/poly_hermite.tcc \
  C:/MinGW/include/c++/13.1.0/tr1/poly_laguerre.tcc \
  C:/MinGW/include/c++/13.1.0/tr1/riemann_zeta.tcc \
- C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/core/Vehicle.h \
+ C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/core/Vehicle.h \
  C:/MinGW/include/c++/13.1.0/algorithm \
  C:/MinGW/include/c++/13.1.0/pstl/glue_algorithm_defs.h \
- C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/spatial/QuadTree.h \
- C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/spatial/KDTree.h \
+ C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/spatial/QuadTree.h \
+ C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/spatial/KDTree.h \
  C:/MinGW/include/c++/13.1.0/iostream C:/MinGW/include/c++/13.1.0/istream \
  C:/MinGW/include/c++/13.1.0/bits/istream.tcc

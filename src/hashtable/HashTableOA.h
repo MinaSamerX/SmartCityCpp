@@ -5,8 +5,21 @@
 #include <vector>
 #include <functional>
 #include <ostream>
-#include <stdexcept>
+#include <cstdint>
 #include "HashFunctions.h"
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  SlotState — moved OUTSIDE the template class to avoid MinGW enum-class
+//  parsing bug with private sections of template classes.
+//  Plain enum wrapped in a namespace for scoping.
+// ─────────────────────────────────────────────────────────────────────────────
+namespace OAInternal {
+    enum SlotState : uint8_t {
+        SLOT_EMPTY    = 0,
+        SLOT_OCCUPIED = 1,
+        SLOT_DELETED  = 2
+    };
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Class: HashTableOA<K, V, Hasher>
@@ -15,41 +28,28 @@
 //
 //  Design:
 //    - Flat array of slots — better cache locality than chaining
-//    - Each slot has a State: EMPTY, OCCUPIED, DELETED (tombstone)
+//    - Each slot has a state: EMPTY, OCCUPIED, DELETED (tombstone)
 //    - Deletion uses tombstones so probe sequences stay intact
-//    - Rehash triggered when load factor exceeds threshold
-//    - Primary hash + step-1 probing: index = (h + i) % cap
+//    - Rehash triggered when load factor exceeds threshold (default 0.60)
 //
 //  Complexity:
-//    - insert / search / remove:  O(1) average
-//    - Worst case (high load):    O(n) — avoided by rehash at 0.6
-//
-//  When to use vs HashTable (chaining):
-//    - HashTableOA: small fixed-type keys (int IDs), cache-critical lookups
-//    - HashTable:   variable-length keys (strings), low-collision tolerance
+//    insert / search / remove:  O(1) average
+//    Worst case (high load):    O(n) — avoided by rehash at 0.6
 // ─────────────────────────────────────────────────────────────────────────────
 template<typename K,
          typename V,
          typename Hasher = HashFn::IntHash>
 class HashTableOA {
-private:
-    // ── Slot state ────────────────────────────────────────────────────────────
-    enum class State : uint8_t { EMPTY, OCCUPIED, DELETED };
-
-    struct Slot {
-        K     key{};
-        V     value{};
-        State state{State::EMPTY};
-    };
-
 public:
     // ── Construction ─────────────────────────────────────────────────────────
     explicit HashTableOA(std::size_t initialCapacity = 17,
                          double      maxLoadFactor   = 0.60)
-        : m_slots(initialCapacity)
-        , m_size(0)
+        : m_size(0)
         , m_maxLoadFactor(maxLoadFactor)
-    {}
+    {
+        m_slots.resize(initialCapacity);
+        for (auto& s : m_slots) s.state = OAInternal::SLOT_EMPTY;
+    }
 
     HashTableOA(const HashTableOA&)             = default;
     HashTableOA& operator=(const HashTableOA&)  = default;
@@ -58,49 +58,49 @@ public:
 
     // ── Core Operations ───────────────────────────────────────────────────────
 
-    // Insert or overwrite key → value
     void insert(const K& key, const V& value) {
         rehashIfNeeded();
 
         std::size_t idx      = startIndex(key);
         std::size_t cap      = m_slots.size();
-        std::size_t tombstone = cap;   // first available tombstone slot
+        std::size_t tombstone = cap;
 
         for (std::size_t i = 0; i < cap; ++i) {
             std::size_t probe = (idx + i) % cap;
             Slot& slot = m_slots[probe];
 
-            if (slot.state == State::OCCUPIED && slot.key == key) {
-                slot.value = value;   // overwrite
+            if (slot.state == OAInternal::SLOT_OCCUPIED && slot.key == key) {
+                slot.value = value;
                 return;
             }
-            if (slot.state == State::DELETED && tombstone == cap) {
-                tombstone = probe;    // remember first tombstone
+            if (slot.state == OAInternal::SLOT_DELETED && tombstone == cap) {
+                tombstone = probe;
             }
-            if (slot.state == State::EMPTY) {
-                // Insert at tombstone if found, else here
+            if (slot.state == OAInternal::SLOT_EMPTY) {
                 std::size_t insertAt = (tombstone < cap) ? tombstone : probe;
-                m_slots[insertAt] = {key, value, State::OCCUPIED};
+                m_slots[insertAt].key   = key;
+                m_slots[insertAt].value = value;
+                m_slots[insertAt].state = OAInternal::SLOT_OCCUPIED;
                 ++m_size;
                 return;
             }
         }
-        // Table full — fallback insert at tombstone
         if (tombstone < cap) {
-            m_slots[tombstone] = {key, value, State::OCCUPIED};
+            m_slots[tombstone].key   = key;
+            m_slots[tombstone].value = value;
+            m_slots[tombstone].state = OAInternal::SLOT_OCCUPIED;
             ++m_size;
         }
     }
 
-    // Returns pointer to value, nullptr if not found
     V* search(const K& key) {
         std::size_t idx = startIndex(key);
         std::size_t cap = m_slots.size();
         for (std::size_t i = 0; i < cap; ++i) {
             std::size_t probe = (idx + i) % cap;
             Slot& slot = m_slots[probe];
-            if (slot.state == State::EMPTY)    return nullptr;
-            if (slot.state == State::OCCUPIED && slot.key == key)
+            if (slot.state == OAInternal::SLOT_EMPTY)   return nullptr;
+            if (slot.state == OAInternal::SLOT_OCCUPIED && slot.key == key)
                 return &slot.value;
         }
         return nullptr;
@@ -112,8 +112,8 @@ public:
         for (std::size_t i = 0; i < cap; ++i) {
             std::size_t probe = (idx + i) % cap;
             const Slot& slot = m_slots[probe];
-            if (slot.state == State::EMPTY)    return nullptr;
-            if (slot.state == State::OCCUPIED && slot.key == key)
+            if (slot.state == OAInternal::SLOT_EMPTY)   return nullptr;
+            if (slot.state == OAInternal::SLOT_OCCUPIED && slot.key == key)
                 return &slot.value;
         }
         return nullptr;
@@ -121,16 +121,15 @@ public:
 
     bool contains(const K& key) const { return search(key) != nullptr; }
 
-    // Tombstone deletion — O(1) amortised
     bool remove(const K& key) {
         std::size_t idx = startIndex(key);
         std::size_t cap = m_slots.size();
         for (std::size_t i = 0; i < cap; ++i) {
             std::size_t probe = (idx + i) % cap;
             Slot& slot = m_slots[probe];
-            if (slot.state == State::EMPTY)  return false;
-            if (slot.state == State::OCCUPIED && slot.key == key) {
-                slot.state = State::DELETED;  // tombstone
+            if (slot.state == OAInternal::SLOT_EMPTY)  return false;
+            if (slot.state == OAInternal::SLOT_OCCUPIED && slot.key == key) {
+                slot.state = OAInternal::SLOT_DELETED;
                 --m_size;
                 return true;
             }
@@ -138,7 +137,6 @@ public:
         return false;
     }
 
-    // operator[] — inserts default if missing
     V& operator[](const K& key) {
         V* found = search(key);
         if (found) return *found;
@@ -149,13 +147,13 @@ public:
     // ── Iteration ─────────────────────────────────────────────────────────────
     void forEach(std::function<void(const K&, V&)> visitor) {
         for (auto& slot : m_slots)
-            if (slot.state == State::OCCUPIED)
+            if (slot.state == OAInternal::SLOT_OCCUPIED)
                 visitor(slot.key, slot.value);
     }
 
     void forEach(std::function<void(const K&, const V&)> visitor) const {
         for (const auto& slot : m_slots)
-            if (slot.state == State::OCCUPIED)
+            if (slot.state == OAInternal::SLOT_OCCUPIED)
                 visitor(slot.key, slot.value);
     }
 
@@ -176,14 +174,14 @@ public:
     }
 
     void clear() {
-        for (auto& s : m_slots) s.state = State::EMPTY;
+        for (auto& s : m_slots) s.state = OAInternal::SLOT_EMPTY;
         m_size = 0;
     }
 
     void printStats(std::ostream& os) const {
         std::size_t del = 0;
         for (const auto& s : m_slots)
-            if (s.state == State::DELETED) ++del;
+            if (s.state == OAInternal::SLOT_DELETED) ++del;
         os << "HashTableOA[open-addr] size=" << m_size
            << " capacity=" << capacity()
            << " loadFactor=" << loadFactor()
@@ -191,6 +189,16 @@ public:
     }
 
 private:
+    // ── Slot struct ───────────────────────────────────────────────────────────
+    // Explicit default constructor + assignment — avoids brace-init issues on MinGW
+    struct Slot {
+        K                     key;
+        V                     value;
+        OAInternal::SlotState state;
+
+        Slot() : key(), value(), state(OAInternal::SLOT_EMPTY) {}
+    };
+
     std::vector<Slot> m_slots;
     std::size_t       m_size;
     double            m_maxLoadFactor;
@@ -204,16 +212,17 @@ private:
         if (loadFactor() < m_maxLoadFactor) return;
 
         std::size_t newCap = m_slots.size() * 2 + 1;
-        std::vector<Slot> newSlots(newCap);
+        std::vector<Slot> newSlots(newCap);  // all default-constructed → SLOT_EMPTY
 
         for (const auto& slot : m_slots) {
-            if (slot.state != State::OCCUPIED) continue;
-            // Re-insert into new table
+            if (slot.state != OAInternal::SLOT_OCCUPIED) continue;
             std::size_t idx = m_hasher(slot.key) % newCap;
             for (std::size_t i = 0; i < newCap; ++i) {
                 std::size_t probe = (idx + i) % newCap;
-                if (newSlots[probe].state == State::EMPTY) {
-                    newSlots[probe] = {slot.key, slot.value, State::OCCUPIED};
+                if (newSlots[probe].state == OAInternal::SLOT_EMPTY) {
+                    newSlots[probe].key   = slot.key;
+                    newSlots[probe].value = slot.value;
+                    newSlots[probe].state = OAInternal::SLOT_OCCUPIED;
                     break;
                 }
             }

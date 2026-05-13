@@ -1,6 +1,6 @@
 CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: \
- C:\Users\Mina\Desktop\ADV_SWD\projects\Final\ Project\SmartCitySystem\src\spatial\QuadTree.cpp \
- C:\Users\Mina\Desktop\ADV_SWD\projects\Final\ Project\SmartCitySystem\src\spatial\QuadTree.h \
+ C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\spatial\QuadTree.cpp \
+ C:\Users\Mina\Desktop\ADV_SWD\projects\SmartCityCpp\src\spatial\QuadTree.h \
  C:/MinGW/include/c++/13.1.0/vector \
  C:/MinGW/include/c++/13.1.0/bits/requires_hosted.h \
  C:/MinGW/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -180,7 +180,7 @@ CMakeFiles/SmartCityCore.dir/src/spatial/QuadTree.cpp.obj: \
  C:/MinGW/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/MinGW/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/MinGW/include/c++/13.1.0/bits/ostream.tcc \
- C:/Users/Mina/Desktop/ADV_SWD/projects/Final\ Project/SmartCitySystem/src/core/Location.h \
+ C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/src/core/Location.h \
  C:/MinGW/include/c++/13.1.0/queue C:/MinGW/include/c++/13.1.0/deque \
  C:/MinGW/include/c++/13.1.0/bits/stl_deque.h \
  C:/MinGW/include/c++/13.1.0/bits/deque.tcc \

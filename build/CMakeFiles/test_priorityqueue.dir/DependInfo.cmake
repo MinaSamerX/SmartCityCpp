@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/tests/test_priorityqueue.cpp" "CMakeFiles/test_priorityqueue.dir/tests/test_priorityqueue.cpp.obj" "gcc" "CMakeFiles/test_priorityqueue.dir/tests/test_priorityqueue.cpp.obj.d"
+  "C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/tests/test_priorityqueue.cpp" "CMakeFiles/test_priorityqueue.dir/tests/test_priorityqueue.cpp.obj" "gcc" "CMakeFiles/test_priorityqueue.dir/tests/test_priorityqueue.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -98,7 +98,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/Mina/Desktop/ADV_SWD/projects/Final Project/SmartCitySystem/CMakeLists.txt"
+  "C:/Users/Mina/Desktop/ADV_SWD/projects/SmartCityCpp/CMakeLists.txt"
   "CMakeFiles/4.3.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.2/CMakeRCCompiler.cmake"
   "CMakeFiles/4.3.2/CMakeSystem.cmake"

@@ -116,10 +116,20 @@ inline std::vector<Activity> buildActivities(
         double travelSecs  = travelTimeFn(pkg->getId());
         double start       = travelSecs;
         double finish      = static_cast<double>(pkg->getDeadline() - now);
-        if (finish <= start) continue;   // already unreachable deadline
+
+        // Overdue packages: keep them but boost profit so they are served first.
+        // finish = 0 means "serve immediately" — set a small positive window.
+        if (finish <= 0.0) {
+            // Overdue — treat as most urgent: start=0, finish=large, max profit
+            start  = 0.0;
+            finish = 1e9;  // serve immediately, no deadline constraint
+        }
 
         double profit = static_cast<int>(pkg->getPriority())
                         * profitPerPriorityLevel;
+        // Extra profit boost for overdue deliveries
+        if (pkg->isOverdue()) profit *= 2.0;
+
         acts.push_back({pkg, start, finish, profit});
     }
     return acts;
